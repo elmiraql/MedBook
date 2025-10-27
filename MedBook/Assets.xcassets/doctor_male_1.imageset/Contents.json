@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "JasonSmith.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

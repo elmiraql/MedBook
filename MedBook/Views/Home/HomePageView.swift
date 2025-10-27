@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct HomePageView: View {
+    
+    @EnvironmentObject var viewModel: HomeViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+     
+        NavigationView {
+            
+            List{
+                HomeHeaderView()
+                UpcomingAppointmentsView(appointments: viewModel.appointments)
+                    .listRowInsets(EdgeInsets())
+                    .listRowSeparator(.hidden)
+            }
+            .listStyle(.inset)
+            .listRowSeparator(.hidden)
+            
+        }
+
     }
+
+    
 }
 
 #Preview {
     HomePageView()
+    .environmentObject(HomeViewModel())
 }
