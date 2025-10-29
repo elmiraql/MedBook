@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Jennifer Miller",
+    "specialty": "Pediatrician",
+    "hospital": "Mercy Hospital",
+    "rating": 4.8,
+    "imageName": "doctor_female_1",
+    "time": "10:30am - 5:30pm",
+    "isFavorite": false
+  },
+  {
+    "name": "Robert Johnson",
+    "specialty": "Neurologist",
+    "hospital": "ABC hospital",
+    "rating": 4.8,
+    "imageName": "doctor_female_1",
+    "time": "10:30am - 5:30pm",
+    "isFavorite": true
+  },
+  {
+    "name": "Laura White",
+    "specialty": "Dentist",
+    "hospital": "Cedar Dental care",
+    "rating": 4.8,
+    "imageName": "doctor_female_1",
+    "time": "10:30am - 5:30pm",
+    "isFavorite": false
+  },
+  {
+    "name": "Brian Clark",
+    "specialty": "Psychiatrist",
+    "hospital": "ABC hospital",
+    "rating": 4.8,
+    "imageName": "doctor_female_1",
+    "time": "10:30am - 5:30pm",
+    "isFavorite": false
+  },
+  {
+    "name": "Linda Martinez",
+    "specialty": "Cardiologist",
+    "hospital": "City Hospital",
+    "rating": 4.9,
+    "imageName": "doctor_female_1",
+    "time": "9:00am - 4:00pm",
+    "isFavorite": true
+  },
+  {
+    "name": "David Lee",
+    "specialty": "Surgeon",
+    "hospital": "Unity Hospital",
+    "rating": 4.7,
+    "imageName": "doctor_female_1",
+    "time": "8:30am - 3:45pm",
+    "isFavorite": false
+  },
+  {
+    "name": "Emily Walker",
+    "specialty": "Gynecologist",
+    "hospital": "Green Health Center",
+    "rating": 4.8,
+    "imageName": "doctor_female_1",
+    "time": "11:00am - 6:00pm",
+    "isFavorite": false
+  },
+  {
+    "name": "Anthony Brown",
+    "specialty": "Dermatologist",
+    "hospital": "Dermacenter",
+    "rating": 4.6,
+    "imageName": "doctor_female_1",
+    "time": "9:30am - 2:30pm",
+    "isFavorite": true
+  }
+]
+

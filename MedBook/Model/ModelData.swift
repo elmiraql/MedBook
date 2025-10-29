@@ -10,7 +10,6 @@ import Foundation
 @Observable
 class ModelData {
     
-//    var appointments
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

@@ -14,7 +14,7 @@ struct UpcomingAppointmentsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Upcoming Appointments")
-                .font(.title).bold()
+                .font(.title2).bold()
                 .padding(.leading, 16)
                 .padding(.top, 16)
 

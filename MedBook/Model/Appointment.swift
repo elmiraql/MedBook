@@ -8,20 +8,6 @@
 import Foundation
 import SwiftUI
 
-//struct Appointment: Codable {
-//    
-//    var name: String
-//    var avatar: String
-//    var specialty: String
-//    var rating: Double
-//    var date: String
-//    var time: String
-//    private var imageName: String
-//    
-//    var image: Image {
-//        Image(imageName)
-//    }
-//}
 struct Appointment: Identifiable, Decodable {
     let id = UUID()
     let name: String

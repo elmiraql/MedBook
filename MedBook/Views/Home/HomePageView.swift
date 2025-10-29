@@ -10,24 +10,31 @@ import SwiftUI
 struct HomePageView: View {
     
     @EnvironmentObject var viewModel: HomeViewModel
-
+    
     var body: some View {
-     
+        
         NavigationView {
             
             List{
                 HomeHeaderView()
+                    .listRowSeparator(.hidden)
+                
                 UpcomingAppointmentsView(appointments: viewModel.appointments)
                     .listRowInsets(EdgeInsets())
                     .listRowSeparator(.hidden)
+                
+                CategoriesGridView(categories: viewModel.categories)
+                    .listRowSeparator(.hidden)
+                    .padding(.top)
+                
+                FindDoctorsView(doctors: viewModel.doctors)
+                    .listRowSeparator(.hidden)
             }
             .listStyle(.inset)
-            .listRowSeparator(.hidden)
+            .selectionDisabled()
             
         }
-
     }
-
     
 }
 

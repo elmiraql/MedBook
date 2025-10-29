@@ -22,7 +22,7 @@ struct HomeHeaderView: View {
             Image("Search")
             Image("Favorite")
         }
-        .padding(.horizontal)
+//        .padding(.horizontal)
     }
 }
 
