@@ -18,34 +18,42 @@ struct DoctorCard: View {
             let cardHorizontalPadding: CGFloat = 16
             let cardWidth = geo.size.width - cardHorizontalPadding * 2
             let cardHeight = cardWidth * 0.40
+            let buttonHeight = cardHeight * 0.35
             
             VStack {
                 HStack(alignment: .top) {
-                    Image("man")
+                    Image(doctor.imageName)
                     //                    .resizable()
                     //                    .frame(width: 44, height: 44)
                         .clipShape(Circle())
+                    
                     VStack(alignment: .leading, spacing: 5){
-                        Text("John Smith")
+                        Text(doctor.name)
                             .font(.headline)
-                        Text("Pediatrian | Mercy hospital")
+                        
+                        Text("\(doctor.specialty) | \(doctor.hospital)")
                             .font(.subheadline)
                             .foregroundColor(.gray)
+                        
                         HStack {
-                            Text("4.4")
-                                .font(.body)
-                            Image("Star")
-                            Image(systemName: "calendar")
-                                .padding(.leading)
-                            Text("10:30am - 5:30pm")
-                                .font(.body)
+                            Text(String(doctor.rating))
+                                .fontWeight(.bold)
                             
+                            Image("Star")
+                            Image("Calender")
+                                .padding(.leading)
+                            Text(doctor.time)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.8)
+                                .fontWeight(.bold)
                         }
                     }
+                    
                     Spacer()
                     Image(isFavorite ? "Favorite_fill" : "Favorite_empty")
                 }
-                RoundedActionButton(title: "Book Appointment", backgroundColor: Color(.lightBlue), textColor: Color(.primaryBlue), height: 60) {
+                
+                RoundedActionButton(title: "Book Appointment", backgroundColor: Color(.lightBlue), textColor: Color(.primaryBlue), height: buttonHeight) {
                     
                 }
             }
@@ -60,5 +68,5 @@ struct DoctorCard: View {
 }
 
 #Preview {
-    DoctorCard(doctor:  Doctor(name: "Jennifer Miller", specialty: "Pediatrician", hospital: "Mercy Hospital", rating: 4.8, imageName: "jennifer", time: "10:30am - 5:30pm", isFavorite: false))
+    DoctorCard(doctor:  Doctor(name: "Jennifer Miller", specialty: "Pediatrician", hospital: "Mercy Hospital", rating: 4.8, imageName: "doctor_female_1", time: "10:30am - 5:30pm", isFavorite: false))
 }

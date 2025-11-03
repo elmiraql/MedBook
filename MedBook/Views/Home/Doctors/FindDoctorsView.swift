@@ -10,34 +10,18 @@ import SwiftUI
 struct FindDoctorsView: View {
     let doctors: [Doctor]
     var body: some View {
-//        GeometryReader { geo in
-            
-//            let cardHorizontalPadding: CGFloat = 16
-//            let cardWidth = geo.size.width - cardHorizontalPadding * 2
-//            let cardHeight = cardWidth * 0.40
             
             VStack(alignment: .leading) {
-                HStack {
-                    Text("Find Doctors")
-                        .font(.title2).bold()
-                    Spacer()
-                    Button("See all") { }
-                        .foregroundColor(Color.blue)
-                }
-                .padding(.bottom, 8)
+               
                 
                 ScrollView {
                     LazyVStack(spacing: 12) {
                         ForEach(doctors) { doctor in
                             DoctorCard(doctor: doctor)
-//                                .padding(.horizontal, 8)
-//                                .frame(width: cardWidth, height: cardHeight)
                         }
                     }
-                    //.padding(.top, 2)
                 }
             }
-//        }
     }
 }
 

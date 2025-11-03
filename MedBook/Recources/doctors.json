@@ -13,7 +13,7 @@
     "specialty": "Neurologist",
     "hospital": "ABC hospital",
     "rating": 4.8,
-    "imageName": "doctor_female_1",
+    "imageName": "doctor_male_1",
     "time": "10:30am - 5:30pm",
     "isFavorite": true
   },
@@ -31,7 +31,7 @@
     "specialty": "Psychiatrist",
     "hospital": "ABC hospital",
     "rating": 4.8,
-    "imageName": "doctor_female_1",
+    "imageName": "doctor_male_1",
     "time": "10:30am - 5:30pm",
     "isFavorite": false
   },
@@ -49,7 +49,7 @@
     "specialty": "Surgeon",
     "hospital": "Unity Hospital",
     "rating": 4.7,
-    "imageName": "doctor_female_1",
+    "imageName": "doctor_male_1",
     "time": "8:30am - 3:45pm",
     "isFavorite": false
   },
@@ -67,7 +67,7 @@
     "specialty": "Dermatologist",
     "hospital": "Dermacenter",
     "rating": 4.6,
-    "imageName": "doctor_female_1",
+    "imageName": "doctor_male_1",
     "time": "9:30am - 2:30pm",
     "isFavorite": true
   }

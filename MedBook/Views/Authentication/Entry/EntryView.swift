@@ -7,24 +7,14 @@
 
 import SwiftUI
 
-enum Route: Hashable {
-    case setPassword
-    case signIn
-    case signUp
-    case otp
-    case forgotPassword
-}
-
 struct EntryView: View {
     
     @StateObject var viewModel: AuthViewModel = AuthViewModel()
-    @StateObject var navModel = NavigationViewModel()
+    @EnvironmentObject var navModel: NavigationRouter
     
     var body: some View {
         NavigationStack(path: $navModel.path) {
             ZStack {
-                //            Color(.cyan)
-                //                .ignoresSafeArea()
                 GeometryReader { geometry in
                     VStack{
                         Image("stethoscope")
@@ -66,33 +56,32 @@ struct EntryView: View {
                         
                     }
                     .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
-                    
-                    .navigationDestination(for: Route.self) { value in
-                        switch value {
-                        case .signIn:
-                            SignInView()
-                                .environmentObject(viewModel)
-                                .environmentObject(navModel)
-                        case .signUp:
-                            SignUpView()
-                                .environmentObject(viewModel)
-                                .environmentObject(navModel)
-                        case .setPassword:
-                            SetPasswordView()
-                                .environmentObject(viewModel)
-                                .environmentObject(navModel)
-                        case .otp:
-                            OTPView()
-                                .environmentObject(viewModel)
-                                .environmentObject(navModel)
-                        case .forgotPassword:
-                            SetPasswordView()
-                                .environmentObject(viewModel)
-                        default:
-                            SignInView()
-                                .environmentObject(viewModel)
-                        }
-                    }
+//                    .navigationDestination(for: Route.self) { value in
+//                        switch value {
+//                        case .signIn:
+//                            SignInView()
+//                                .environmentObject(viewModel)
+//                                .environmentObject(navModel)
+//                        case .signUp:
+//                            SignUpView()
+//                                .environmentObject(viewModel)
+//                                .environmentObject(navModel)
+//                        case .setPassword:
+//                            SetPasswordView()
+//                                .environmentObject(viewModel)
+//                                .environmentObject(navModel)
+//                        case .otp:
+//                            OTPView()
+//                                .environmentObject(viewModel)
+//                                .environmentObject(navModel)
+//                        case .forgotPassword:
+//                            SetPasswordView()
+//                                .environmentObject(viewModel)
+//                        default:
+//                            SignInView()
+//                                .environmentObject(viewModel)
+//                        }
+//                    }
                 }
                 
             }
@@ -101,5 +90,5 @@ struct EntryView: View {
 }
 
 #Preview {
-    EntryView()
+    EntryView().environmentObject(NavigationRouter())
 }

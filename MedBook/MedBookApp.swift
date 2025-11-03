@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct MedBookApp: App {
+    
+    @StateObject var navRouter = NavigationRouter()
+    @StateObject var authVM = AuthViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+//                .environmentObject(navRouter)
+            NavigationContainer()
+                .environmentObject(navRouter)
+                .environmentObject(authVM)
         }
     }
 }

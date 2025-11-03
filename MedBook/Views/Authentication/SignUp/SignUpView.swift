@@ -12,7 +12,7 @@ struct SignUpView: View {
     @State private var fullName: String = ""
     @State private var emailAddress: String = ""
     @EnvironmentObject var viewModel: AuthViewModel
-    @EnvironmentObject var navModel: NavigationViewModel
+    @EnvironmentObject var navModel: NavigationRouter
     
     var body: some View {
 

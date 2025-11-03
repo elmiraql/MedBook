@@ -12,7 +12,7 @@ struct SetPasswordView: View {
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
     @EnvironmentObject var viewModel: AuthViewModel
-    @EnvironmentObject var navModel: NavigationViewModel
+    @EnvironmentObject var navModel: NavigationRouter
 
     var body: some View {
 //        NavigationStack {

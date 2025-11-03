@@ -13,13 +13,18 @@ struct ContentView: View {
         case home
 //        case bookings
 //        case chat
-//        case profile
+        case profile
     }
     
     @State var selectedTab: Tab = .home
-//    @EnvironmentObject var authViewModel: AuthViewModel
-    @StateObject private var homeViewModel = HomeViewModel()
     
+    @EnvironmentObject var navRouter: NavigationRouter
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
+    init() {
+        UITabBar.appearance().unselectedItemTintColor = UIColor.green
+    }
+  
     var body: some View {
         Group {
 //            NavigationStack {
@@ -28,22 +33,33 @@ struct ContentView: View {
                 
                 TabView(selection: $selectedTab) {
                     HomePageView()
-                        .environmentObject(homeViewModel)
                         .tabItem{
-                            Image(systemName: "house")
+                            Image("Home")
                             Text("Home")
                         }
                         .tag(Tab.home)
-                    
-                    
+                        .toolbarBackground(Color.primaryBlue, for: .tabBar)
+                        .toolbarBackgroundVisibility(.visible, for: .tabBar)
+                        .environmentObject(navRouter)
+
+                    ProfileView()
+                        .tabItem{
+                            Image("Profile")
+                            Text("Profile")
+                        }
+                        .tag(Tab.profile)
+                        .toolbarBackground(Color.primaryBlue, for: .tabBar)
+                        .toolbarBackgroundVisibility(.visible, for: .tabBar)
                 }
-                
+                .accentColor(.white)
+            
 //            }
         }
-       
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(NavigationRouter())
+        .environmentObject(AuthViewModel())
 }

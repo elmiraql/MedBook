@@ -14,6 +14,8 @@ struct HomeHeaderView: View {
             
             VStack{
                 Text("Welcome back")
+                    .font(.subheadline)
+//                    .foregroundColor(.white.opacity(0.7))
                 Text("Andrew Smith")
             }
             

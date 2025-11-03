@@ -31,24 +31,29 @@ struct AppointmentCard: View {
                         Text(appointment.specialty)
                             .font(.subheadline)
                             .foregroundColor(.white.opacity(0.7))
-                        Text("\(String(format: "%.1f", appointment.rating)) ★")
-                            .font(.title2)
-                            .foregroundColor(.white)
+                        HStack {
+                            Text("\(String(format: "%.1f", appointment.rating))")
+                                .font(.body).bold()
+                                .foregroundColor(.white)
+                            
+                            Image("Star")
+                        }
                     }
                     Spacer()
-                    Image(systemName: "ellipsis")
-                        .foregroundColor(.white)
+                    Image("Kebab")
                 }
                
                 Spacer()
                 HStack(spacing: 16) {
                     HStack(spacing: 8) {
-                        Image(systemName: "calendar")
+                        Image("Calender")
                         Text(appointment.date)
+                            .fontWeight(.bold)
                     }
                     HStack(spacing: 8) {
-                        Image(systemName: "clock")
+                        Image("Time")
                         Text(appointment.time)
+                            .fontWeight(.bold)
                     }
                 }
                 .font(.body)

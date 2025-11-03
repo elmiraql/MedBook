@@ -9,7 +9,8 @@ import SwiftUI
 
 struct HomePageView: View {
     
-    @EnvironmentObject var viewModel: HomeViewModel
+    @StateObject private var homeViewModel = HomeViewModel()
+    @EnvironmentObject var navRouter: NavigationRouter
     
     var body: some View {
         
@@ -19,21 +20,35 @@ struct HomePageView: View {
                 HomeHeaderView()
                     .listRowSeparator(.hidden)
                 
-                UpcomingAppointmentsView(appointments: viewModel.appointments)
+                UpcomingAppointmentsView(appointments: homeViewModel.appointments)
                     .listRowInsets(EdgeInsets())
                     .listRowSeparator(.hidden)
                 
-                CategoriesGridView(categories: viewModel.categories)
+                CategoriesGridView(categories: homeViewModel.categories)
                     .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
                     .padding(.top)
                 
-                FindDoctorsView(doctors: viewModel.doctors)
+                HStack {
+                    Text("Find Doctors")
+                        .font(.title2).bold()
+                    Spacer()
+                    Button("See all") {
+                        navRouter.navigate(to: .seeAllDoctors)
+                    }
+                        .foregroundColor(Color.blue)
+                }
+                .padding(.bottom, 8)
+                
+                FindDoctorsView(doctors: homeViewModel.doctors)
                     .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
             }
             .listStyle(.inset)
             .selectionDisabled()
-            
+
         }
+        
     }
     
 }
@@ -41,4 +56,5 @@ struct HomePageView: View {
 #Preview {
     HomePageView()
     .environmentObject(HomeViewModel())
+    .environmentObject(NavigationRouter())
 }
