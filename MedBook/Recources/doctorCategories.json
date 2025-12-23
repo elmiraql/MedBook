@@ -1,0 +1,27 @@
+[
+  {
+    "id": "all",
+    "title": "All",
+    "apiKey": "all"
+  },
+  {
+    "id": "general",
+    "title": "General",
+    "apiKey": "general"
+  },
+  {
+    "id": "cardiologist",
+    "title": "Cardiologist",
+    "apiKey": "cardiologist"
+  },
+  {
+    "id": "dentist",
+    "title": "Dentist",
+    "apiKey": "dentist"
+  },
+  {
+    "id": "dermatologist",
+    "title": "Dermatologist",
+    "apiKey": "dermatologist"
+  }
+]

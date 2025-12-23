@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct FindDoctorsView: View {
+    
     let doctors: [Doctor]
+    
     var body: some View {
             
             VStack(alignment: .leading) {
                
-                
                 ScrollView {
                     LazyVStack(spacing: 12) {
                         ForEach(doctors) { doctor in
                             DoctorCard(doctor: doctor)
                         }
                     }
+//                    .onAppear {
+//                        print(nil == .none)
+//                    }
                 }
             }
     }
+    
 }
 
 

@@ -27,7 +27,7 @@ struct DoctorCard: View {
                     //                    .frame(width: 44, height: 44)
                         .clipShape(Circle())
                     
-                    VStack(alignment: .leading, spacing: 5){
+                    VStack(alignment: .leading, spacing: 8){
                         Text(doctor.name)
                             .font(.headline)
                         

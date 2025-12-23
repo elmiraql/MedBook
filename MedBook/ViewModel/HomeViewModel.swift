@@ -12,6 +12,7 @@ class HomeViewModel: ObservableObject {
     @Published var appointments: [Appointment] = load("appointments.json")
     @Published var categories: [Category] = load("categories.json")
     @Published var doctors: [Doctor] = load("doctors.json")
+    @Published var doctorCategories: [DoctorCategory] = load("doctorCategories.json")
     
 }
 
