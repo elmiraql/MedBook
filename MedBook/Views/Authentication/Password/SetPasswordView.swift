@@ -27,7 +27,7 @@ struct SetPasswordView: View {
 //                        OTPView().environmentObject(viewModel)
 //                    } label: {
                         RoundedActionButton(title: "Continue", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, action: {
-                            navModel.path.append(Route.otp)
+                            navModel.navigate(to: .otp(viewModel))
                         })
                             .padding()
 //                    }

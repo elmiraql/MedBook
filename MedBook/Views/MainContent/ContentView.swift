@@ -28,9 +28,7 @@ struct ContentView: View {
     var body: some View {
         Group {
 //            NavigationStack {
-                
-//               EntryView()
-                
+                                
                 TabView(selection: $selectedTab) {
                     HomePageView()
                         .tabItem{

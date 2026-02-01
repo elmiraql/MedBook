@@ -34,7 +34,7 @@ struct HomePageView: View {
                         .font(.title2).bold()
                     Spacer()
                     Button("See all") {
-                        navRouter.navigate(to: .seeAllDoctors)
+                        navRouter.navigate(to: .seeAllDoctors(homeViewModel))
                     }
                         .foregroundColor(Color.blue)
                 }

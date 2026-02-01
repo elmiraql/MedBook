@@ -9,14 +9,18 @@ import SwiftUI
 
 struct AllDoctorsView: View {
     
-    @EnvironmentObject var viewModel: HomeViewModel
+//    @EnvironmentObject var viewModel: HomeViewModel
     @State private var searchText = ""
     @State private var selectedCategory: DoctorCategory?
+    var doctors: [Doctor]
+    var categories: [DoctorCategory]
     
     private var filteredDoctors: [Doctor] {
 //        guard !searchText.isEmpty else { return viewModel.doctors }
        
-        return viewModel.doctors.filter { doctor in
+//        return viewModel.doctors.filter { doctor in
+            return doctors.filter { doctor in
+
             
             let matchText = searchText.isEmpty ||
             doctor.name.localizedStandardContains(searchText) ||
@@ -35,7 +39,8 @@ struct AllDoctorsView: View {
             //horizontal filter
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
-                    ForEach(viewModel.doctorCategories) { category in
+//                    ForEach(viewModel.doctorCategories) { category in
+                    ForEach(categories) { category in
                         
                         let isAll = category.apiKey == "all" || category.id == "all"
                         let isSelected = isAll ? (selectedCategory == nil) : (selectedCategory?.id == category.id)
@@ -66,6 +71,6 @@ struct AllDoctorsView: View {
 }
 
 #Preview {
-    AllDoctorsView()
-        .environmentObject(HomeViewModel())
+    AllDoctorsView(doctors: [Doctor(name: "", specialty: "", hospital: "", rating: 0, imageName: "", time: "", isFavorite: true, stats: [DoctorStat(iconName: "", valueText: "", caption: "")])], categories: [DoctorCategory(id: "", title: "", apiKey: "")])
+//        .environmentObject(HomeViewModel())
 }

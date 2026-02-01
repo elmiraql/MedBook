@@ -26,14 +26,16 @@ struct SignUpView: View {
                 RoundedActionButton(title: "Continue", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, action: {
                     viewModel.emailAddress = emailAddress
                     viewModel.fullName = fullName
-                    navModel.path.append(Route.setPassword)
+//                    navModel.path.append(Route.setPassword)
+                    navModel.navigate(to: .setPassword(viewModel))
                 })
                 .padding()
                 
                 HStack{
                     Text("Already have an account?")
                     Button("Sign in", action: {
-                        navModel.path.append(Route.signIn)
+//                        navModel.path.append(Route.signIn)
+                        navModel.navigate(to: .signIn(viewModel))
                     })
                         .font(.system(size: 16, weight: .bold))
                         .foregroundStyle(Color.black)

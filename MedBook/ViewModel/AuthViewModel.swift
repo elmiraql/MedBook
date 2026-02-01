@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class AuthViewModel: ObservableObject {
+class AuthViewModel: ObservableObject, Hashable {    
 
    @Published var icons: [SocialIcon] = [
         SocialIcon(imageName: "Google") { print("Google tapped") },
@@ -18,5 +18,12 @@ class AuthViewModel: ObservableObject {
     @Published var fullName: String = ""
     @Published var emailAddress: String = ""
     
-
-}
+    let id = UUID()
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func == (lhs: AuthViewModel, rhs: AuthViewModel) -> Bool {
+        lhs.id == rhs.id
+    }
+} 

@@ -17,9 +17,11 @@ struct MedBookApp: App {
         WindowGroup {
 //            ContentView()
 //                .environmentObject(navRouter)
-            NavigationContainer()
-                .environmentObject(navRouter)
-                .environmentObject(authVM)
+            NavigationContainer{
+                ContentView()
+            }
+            .environmentObject(navRouter)
+            .environmentObject(authVM)
         }
     }
 }

@@ -34,15 +34,15 @@ struct EntryView: View {
                         VStack{
                             
                             RoundedActionButton(title: "Log In", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, action: {
-                                navModel.path.append(Route.signIn)
+                                navModel.navigate(to: .signIn(viewModel))
                             })
                             
                             RoundedActionButton(title: "Sign Up", backgroundColor: Color("LightGray"), textColor: .black, height: geometry.size.width*0.15, action: {
-                                navModel.path.append(Route.signUp)
+                                navModel.navigate(to: .signUp(viewModel))
                             })
                             
                             Button {
-                                navModel.path.append(Route.forgotPassword)
+                                navModel.navigate(to: .forgotPassword(viewModel))
                             } label: {
                                 Text("Forgot password?")
                                     .font(.system(size: 16, weight: .bold))
@@ -56,32 +56,6 @@ struct EntryView: View {
                         
                     }
                     .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
-//                    .navigationDestination(for: Route.self) { value in
-//                        switch value {
-//                        case .signIn:
-//                            SignInView()
-//                                .environmentObject(viewModel)
-//                                .environmentObject(navModel)
-//                        case .signUp:
-//                            SignUpView()
-//                                .environmentObject(viewModel)
-//                                .environmentObject(navModel)
-//                        case .setPassword:
-//                            SetPasswordView()
-//                                .environmentObject(viewModel)
-//                                .environmentObject(navModel)
-//                        case .otp:
-//                            OTPView()
-//                                .environmentObject(viewModel)
-//                                .environmentObject(navModel)
-//                        case .forgotPassword:
-//                            SetPasswordView()
-//                                .environmentObject(viewModel)
-//                        default:
-//                            SignInView()
-//                                .environmentObject(viewModel)
-//                        }
-//                    }
                 }
                 
             }

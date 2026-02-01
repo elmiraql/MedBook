@@ -7,56 +7,60 @@
 
 import SwiftUI
 
-struct NavigationContainer: View {
+struct NavigationContainer<Content: View>: View {
     
-    @EnvironmentObject var router: NavigationRouter
-    @EnvironmentObject var authVM: AuthViewModel
+    @inlinable
+    init(@ViewBuilder content: @escaping () -> Content) {
+        self.content = content()
+    }
+    
+    @EnvironmentObject var router: NavigationRouter    
+    private let content: Content
 
     var body: some View {
         NavigationStack(path: $router.path) {
-            ContentView()
+            content
                 .navigationDestination(for: Route.self) { route in
                     routeView(for: route)
                 }
         }
+        .environmentObject(router)
     }
 
     @ViewBuilder
     func routeView(for route: Route) -> some View {
         switch route {
-        case .signIn:
+        case let .signIn(authViewModel):
             SignInView()
-                .environmentObject(authVM)
+                .environmentObject(authViewModel)
                 .environmentObject(router)
-        case .signUp:
+        case let .signUp(authViewModel):
             SignUpView()
-                .environmentObject(authVM)
+                .environmentObject(authViewModel)
                 .environmentObject(router)
-        case .setPassword:
+        case let .setPassword(authViewModel):
             SetPasswordView()
-                .environmentObject(authVM)
+                .environmentObject(authViewModel)
                 .environmentObject(router)
-        case .otp:
+        case let .otp(authViewModel):
             OTPView()
-                .environmentObject(authVM)
+                .environmentObject(authViewModel)
                 .environmentObject(router)
-        case .forgotPassword:
+        case let .forgotPassword(authViewModel):
             SetPasswordView()
-                .environmentObject(authVM)
-        case .seeAllDoctors:
-            let viewModel = HomeViewModel()
-            AllDoctorsView()
-                .environmentObject(viewModel)
+                .environmentObject(authViewModel)
+        case let .seeAllDoctors(homeViewModel):
+            AllDoctorsView(doctors: homeViewModel.doctors, categories: homeViewModel.doctorCategories)
+//                .environmentObject(viewModel)
         default:
-            SignInView()
-                .environmentObject(authVM)
+            EmptyView()
         }
     }
 }
 
 
 #Preview {
-    NavigationContainer()
+    NavigationContainer{ ContentView() }
         .environmentObject(NavigationRouter())
         .environmentObject(AuthViewModel())
 }

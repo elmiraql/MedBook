@@ -6,7 +6,29 @@
     "rating": 4.8,
     "imageName": "doctor_female_1",
     "time": "10:30am - 5:30pm",
-    "isFavorite": false
+    "isFavorite": false,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   },
   {
     "name": "Robert Johnson",
@@ -15,7 +37,29 @@
     "rating": 4.8,
     "imageName": "doctor_male_1",
     "time": "10:30am - 5:30pm",
-    "isFavorite": true
+    "isFavorite": true,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   },
   {
     "name": "Laura White",
@@ -24,7 +68,29 @@
     "rating": 4.8,
     "imageName": "doctor_female_1",
     "time": "10:30am - 5:30pm",
-    "isFavorite": false
+    "isFavorite": false,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   },
   {
     "name": "Brian Clark",
@@ -33,7 +99,29 @@
     "rating": 4.8,
     "imageName": "doctor_male_1",
     "time": "10:30am - 5:30pm",
-    "isFavorite": false
+    "isFavorite": false,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   },
   {
     "name": "Linda Martinez",
@@ -42,7 +130,29 @@
     "rating": 4.9,
     "imageName": "doctor_female_1",
     "time": "9:00am - 4:00pm",
-    "isFavorite": true
+    "isFavorite": true,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   },
   {
     "name": "David Lee",
@@ -51,7 +161,29 @@
     "rating": 4.7,
     "imageName": "doctor_male_1",
     "time": "8:30am - 3:45pm",
-    "isFavorite": false
+    "isFavorite": false,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   },
   {
     "name": "Emily Walker",
@@ -60,7 +192,29 @@
     "rating": 4.8,
     "imageName": "doctor_female_1",
     "time": "11:00am - 6:00pm",
-    "isFavorite": false
+    "isFavorite": false,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   },
   {
     "name": "Anthony Brown",
@@ -69,7 +223,29 @@
     "rating": 4.6,
     "imageName": "doctor_male_1",
     "time": "9:30am - 2:30pm",
-    "isFavorite": true
+    "isFavorite": true,
+    "stats": [
+        {
+          "iconName": "profile-2user",
+          "valueText": "2,000+",
+          "caption": "patients"
+        },
+        {
+          "iconName": "medal",
+          "valueText": "10+",
+          "caption": "experience"
+        },
+        {
+          "iconName": "black_star",
+          "valueText": "5",
+          "caption": "rating"
+        },
+        {
+          "iconName": "messages",
+          "valueText": "1,872",
+          "caption": "reviews"
+        }
+      ]
   }
 ]
 

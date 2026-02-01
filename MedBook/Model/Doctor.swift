@@ -16,4 +16,5 @@ struct Doctor: Identifiable, Codable {
     let imageName: String
     let time: String
     let isFavorite: Bool
+    let stats: [DoctorStat]?
 }
