@@ -1,11 +1,12 @@
 [
-  {
+  { "doctorId": "doc_003",
     "name": "Jennifer Miller",
     "specialty": "Pediatrician",
     "hospital": "Mercy Hospital",
     "rating": 4.8,
     "imageName": "doctor_female_1",
     "time": "10:30am - 5:30pm",
+    "consultationDays": "Monday-Friday",
     "isFavorite": false,
     "stats": [
         {
@@ -28,15 +29,17 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
+      ],
+    "about": "Pediatrician serving children from newborn to 18 years with special interests in asthma management, allergies, and developmental delays. Dr. Chen completed his residency at Boston Children's Hospital and holds certifications in pediatric advanced life support. He emphasizes preventive care and vaccination schedules. Parents appreciate his gentle approach and thorough well-child examinations."
   },
-  {
+  { "doctorId": "doc_002",
     "name": "Robert Johnson",
     "specialty": "Neurologist",
     "hospital": "ABC hospital",
     "rating": 4.8,
     "imageName": "doctor_male_1",
     "time": "10:30am - 5:30pm",
+    "consultationDays": "Monday, Wednesday, Friday",
     "isFavorite": true,
     "stats": [
         {
@@ -59,15 +62,17 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
+      ],
+    "about": "Neurologist with expertise in stroke care, epilepsy management, and neurodegenerative diseases including Parkinson's and Alzheimer's. Dr. Patel trained at Mayo Clinic and is published in 18 peer-reviewed journals on neurovascular imaging techniques. She pioneered a rapid stroke assessment protocol that reduced treatment times by 35%. Known for her patient-centered approach and clear communication of complex diagnoses."
   },
-  {
+  { "doctorId": "doc_009",
     "name": "Laura White",
     "specialty": "Dentist",
     "hospital": "Cedar Dental care",
     "rating": 4.8,
     "imageName": "doctor_female_1",
     "time": "10:30am - 5:30pm",
+    "consultationDays": "Monday-Thursday",
     "isFavorite": false,
     "stats": [
         {
@@ -90,15 +95,18 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
+      ],
+    "about": "General dentist with advanced training in cosmetic dentistry, root canal therapy, and dental implants. Dr. Rivera completed her residency at UCLA School of Dentistry and is Invisalign certified. She emphasizes preventive care, patient education, and minimally invasive techniques. With 10 years of experience, she creates comfortable, anxiety-free dental visits using sedation dentistry when needed."
+
   },
-  {
+  {  "doctorId": "doc_010",
     "name": "Brian Clark",
     "specialty": "Psychiatrist",
     "hospital": "ABC hospital",
     "rating": 4.8,
     "imageName": "doctor_male_1",
     "time": "10:30am - 5:30pm",
+    "consultationDays": "Tuesday-Friday",
     "isFavorite": false,
     "stats": [
         {
@@ -121,15 +129,16 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
-  },
-  {
+      ],
+    "about": "Board-certified psychiatrist specializing in mood disorders, schizophrenia spectrum disorders, and addiction psychiatry. Dr. Hale completed fellowship training at Harvard Medical School and utilizes both medication management and psychotherapy. He has extensive experience with treatment-resistant depression and ketamine-assisted psychotherapy. Known for his collaborative treatment approach."  },
+  { "doctorId": "doc_001",
     "name": "Linda Martinez",
     "specialty": "Cardiologist",
     "hospital": "City Hospital",
     "rating": 4.9,
     "imageName": "doctor_female_1",
     "time": "9:00am - 4:00pm",
+    "consultationDays": "Monday, Wednesday",
     "isFavorite": true,
     "stats": [
         {
@@ -152,15 +161,17 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
+      ],
+    "about": "Board-certified cardiologist with 15+ years of experience specializing in interventional cardiology and heart failure management. Dr. Lee completed his fellowship at Johns Hopkins Hospital and has performed over 2,500 coronary angioplasties and stent placements. He is an active researcher in minimally invasive cardiac procedures and a member of the American College of Cardiology. Patients praise his thorough explanations and compassionate bedside manner."
   },
-  {
+  {  "doctorId": "doc_005",
     "name": "David Lee",
     "specialty": "Surgeon",
     "hospital": "Unity Hospital",
     "rating": 4.7,
     "imageName": "doctor_male_1",
     "time": "8:30am - 3:45pm",
+    "consultationDays": "Wednesday-Friday",
     "isFavorite": false,
     "stats": [
         {
@@ -183,15 +194,18 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
+      ],
+    "about": "Fellowship-trained general surgeon specializing in minimally invasive laparoscopic surgery, hernia repair, gallbladder removal, and colorectal procedures. Dr. Lang completed surgical residency at Cleveland Clinic and is certified by the American Board of Surgery. She has performed over 4,000 operations and leads quality improvement initiatives for surgical outcomes."
+
   },
-  {
+  { "doctorId": "doc_006",
     "name": "Emily Walker",
     "specialty": "Gynecologist",
     "hospital": "Green Health Center",
     "rating": 4.8,
     "imageName": "doctor_female_1",
     "time": "11:00am - 6:00pm",
+    "consultationDays": "Monday, Tuesday, Thursday",
     "isFavorite": false,
     "stats": [
         {
@@ -214,15 +228,17 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
+      ],
+    "about": "OB/GYN with comprehensive women's health services including prenatal care, high-risk pregnancies, infertility treatment, and minimally invasive gynecologic surgery. Dr. Kim delivered over 3,000 babies during her 18-year career and is certified in maternal-fetal medicine. She prioritizes patient education and shared decision-making."
   },
-  {
+  { "doctorId": "doc_004",
     "name": "Anthony Brown",
     "specialty": "Dermatologist",
     "hospital": "Dermacenter",
     "rating": 4.6,
     "imageName": "doctor_male_1",
     "time": "9:30am - 2:30pm",
+    "consultationDays": "Tuesday, Thursday",
     "isFavorite": true,
     "stats": [
         {
@@ -245,7 +261,9 @@
           "valueText": "1,872",
           "caption": "reviews"
         }
-      ]
+      ],
+    "about": "Dermatologist specializing in medical, surgical, and cosmetic dermatology. Dr. Rodriguez is fellowship-trained in Mohs micrographic surgery for skin cancer and laser treatments for acne scarring. With 12 years of experience, she has treated over 5,000 patients with complex skin conditions. Fluent in English and Spanish, she serves diverse communities."
+
   }
 ]
 

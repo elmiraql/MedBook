@@ -1,0 +1,88 @@
+{
+  "reviews": [
+    {
+      "doctorId": "doc_001",
+      "reviews": [
+        {"text": "Dr. Martinez saved my life during a heart attack. Explained everything clearly.", "author": "Michael R.", "stars": "⭐⭐⭐⭐⭐", "date": "2 weeks ago"},
+        {"text": "Very thorough, listened to all my concerns. Highly recommend!", "author": "Sarah K.", "stars": "⭐⭐⭐⭐⭐", "date": "1 month ago"},
+        {"text": "Best cardiologist in the city. Professional and caring.", "author": "James T.", "stars": "⭐⭐⭐⭐⭐", "date": "3 weeks ago"},
+        {"text": "Fixed my arrhythmia quickly. Great bedside manner.", "author": "Lisa P.", "stars": "⭐⭐⭐⭐", "date": "1 week ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_002",
+      "reviews": [
+        {"text": "Dr. Johnson's stroke treatment plan was life-changing. Grateful forever.", "author": "Robert M.", "stars": "⭐⭐⭐⭐⭐", "date": "1 week ago"},
+        {"text": "Finally found a doctor who understands migraines. Thank you!", "author": "Emily S.", "stars": "⭐⭐⭐⭐", "date": "2 months ago"},
+        {"text": "Explained my MRI results perfectly. Very knowledgeable.", "author": "David L.", "stars": "⭐⭐⭐⭐⭐", "date": "4 weeks ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_003",
+      "reviews": [
+        {"text": "Our kids love Dr. Miller! Gentle and explains everything to parents.", "author": "Lisa P.", "stars": "⭐⭐⭐⭐⭐", "date": "3 days ago"},
+        {"text": "Best pediatrician ever. Always available for questions.", "author": "Andrew B.", "stars": "⭐⭐⭐⭐⭐", "date": "1 month ago"},
+        {"text": "Took great care of my newborn. Highly recommend!", "author": "Maria G.", "stars": "⭐⭐⭐⭐⭐", "date": "2 weeks ago"},
+        {"text": "Vaccines were painless for my toddler!", "author": "Chris W.", "stars": "⭐⭐⭐⭐⭐", "date": "5 days ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_004",
+      "reviews": [
+        {"text": "My acne cleared up completely after 3 months. Amazing results!", "author": "Sophia L.", "stars": "⭐⭐⭐⭐⭐", "date": "1 week ago"},
+        {"text": "Professional and kind. Fixed my skin cancer scare quickly.", "author": "John D.", "stars": "⭐⭐⭐⭐⭐", "date": "3 weeks ago"},
+        {"text": "Cosmetic treatments look very natural. Excellent work.", "author": "Rachel M.", "stars": "⭐⭐⭐⭐", "date": "1 month ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_005",
+      "reviews": [
+        {"text": "Back to running after ACL surgery. Dr. Lee is a miracle worker!", "author": "Chris B.", "stars": "⭐⭐⭐⭐⭐", "date": "2 months ago"},
+        {"text": "Fixed my shoulder pain when others couldn't. Top surgeon.", "author": "Laura S.", "stars": "⭐⭐⭐⭐⭐", "date": "3 weeks ago"},
+        {"text": "Clear recovery plan. Got me back to sports in 6 months.", "author": "Mike R.", "stars": "⭐⭐⭐⭐⭐", "date": "1 month ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_006",
+      "reviews": [
+        {"text": "Delivered my twins safely. Couldn't ask for better care.", "author": "Jessica T.", "stars": "⭐⭐⭐⭐⭐", "date": "2 weeks ago"},
+        {"text": "Very supportive during high-risk pregnancy. Thank you!", "author": "Amanda W.", "stars": "⭐⭐⭐⭐⭐", "date": "1 month ago"},
+        {"text": "Made me feel comfortable during exams. Excellent doctor.", "author": "Nicole H.", "stars": "⭐⭐⭐⭐⭐", "date": "3 weeks ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_007",
+      "reviews": [
+        {"text": "Got my diabetes under control. Life-changing treatment plan.", "author": "Steven P.", "stars": "⭐⭐⭐⭐⭐", "date": "4 weeks ago"},
+        {"text": "Finally stable A1C numbers. Dr. Thompson knows his stuff.", "author": "Karen L.", "stars": "⭐⭐⭐⭐⭐", "date": "2 months ago"},
+        {"text": "Explained insulin therapy perfectly. Very patient.", "author": "Mark D.", "stars": "⭐⭐⭐⭐", "date": "3 weeks ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_008",
+      "reviews": [
+        {"text": "20/20 vision after LASIK! Life-changing surgery.", "author": "Brian C.", "stars": "⭐⭐⭐⭐⭐", "date": "1 month ago"},
+        {"text": "Cataract surgery was painless. Excellent results.", "author": "Margaret R.", "stars": "⭐⭐⭐⭐⭐", "date": "2 weeks ago"},
+        {"text": "Trust her completely with my eye health.", "author": "Tom W.", "stars": "⭐⭐⭐⭐⭐", "date": "3 weeks ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_009",
+      "reviews": [
+        {"text": "No pain implants! Professional and gentle.", "author": "Jennifer M.", "stars": "⭐⭐⭐⭐⭐", "date": "1 week ago"},
+        {"text": "Perfect smile after veneers. Worth every penny.", "author": "Alex K.", "stars": "⭐⭐⭐⭐⭐", "date": "2 months ago"},
+        {"text": "Made my dental anxiety disappear. Best dentist!", "author": "Olivia S.", "stars": "⭐⭐⭐⭐⭐", "date": "3 weeks ago"}
+      ]
+    },
+    {
+      "doctorId": "doc_010",
+      "reviews": [
+        {"text": "Finally sleeping through the night. CBT changed my life.", "author": "Ryan T.", "stars": "⭐⭐⭐⭐⭐", "date": "1 month ago"},
+        {"text": "Understands anxiety better than anyone I've seen.", "author": "Emma J.", "stars": "⭐⭐⭐⭐⭐", "date": "2 weeks ago"},
+        {"text": "Practical tools, not just medication. Highly recommend.", "author": "Nathan G.", "stars": "⭐⭐⭐⭐⭐", "date": "4 weeks ago"}
+      ]
+    }
+  ]
+}
+
+

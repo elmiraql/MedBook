@@ -20,7 +20,6 @@ struct AllDoctorsView: View {
        
 //        return viewModel.doctors.filter { doctor in
             return doctors.filter { doctor in
-
             
             let matchText = searchText.isEmpty ||
             doctor.name.localizedStandardContains(searchText) ||
@@ -71,6 +70,6 @@ struct AllDoctorsView: View {
 }
 
 #Preview {
-    AllDoctorsView(doctors: [Doctor(name: "", specialty: "", hospital: "", rating: 0, imageName: "", time: "", isFavorite: true, stats: [DoctorStat(iconName: "", valueText: "", caption: "")])], categories: [DoctorCategory(id: "", title: "", apiKey: "")])
+    AllDoctorsView(doctors: [Doctor(doctorId: "", name: "", specialty: "", hospital: "", rating: 0, imageName: "", time: "", isFavorite: true, stats: [DoctorStat(iconName: "", valueText: "", caption: "")], about: "", consultationDays: "Friday: 09:00 AM - 01:00 PM")], categories: [DoctorCategory(id: "", title: "", apiKey: ""  )])
 //        .environmentObject(HomeViewModel())
 }

@@ -51,7 +51,8 @@ struct NavigationContainer<Content: View>: View {
                 .environmentObject(authViewModel)
         case let .seeAllDoctors(homeViewModel):
             AllDoctorsView(doctors: homeViewModel.doctors, categories: homeViewModel.doctorCategories)
-//                .environmentObject(viewModel)
+        case let .doctorDetails(doctor):
+            DoctorDetailsView(doctor: doctor)
         default:
             EmptyView()
         }

@@ -68,5 +68,5 @@ struct DoctorCard: View {
 }
 
 #Preview {
-    DoctorCard(doctor:  Doctor(name: "Jennifer Miller", specialty: "Pediatrician", hospital: "Mercy Hospital", rating: 4.8, imageName: "doctor_female_1", time: "10:30am - 5:30pm", isFavorite: false, stats: []))
+    DoctorCard(doctor:  Doctor(doctorId: "", name: "Jennifer Miller", specialty: "Pediatrician", hospital: "Mercy Hospital", rating: 4.8, imageName: "doctor_female_1", time: "10:30am - 5:30pm", isFavorite: false, stats: [], about: "", consultationDays: "Friday: 09:00 AM - 01:00 PM"))
 }

@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Doctor: Identifiable, Codable {
+struct Doctor: Identifiable, Codable, Hashable {
     let id = UUID()
+    let doctorId: String
     let name: String
     let specialty: String
     let hospital: String
@@ -17,4 +18,6 @@ struct Doctor: Identifiable, Codable {
     let time: String
     let isFavorite: Bool
     let stats: [DoctorStat]?
+    let about: String
+    let consultationDays: String
 }
