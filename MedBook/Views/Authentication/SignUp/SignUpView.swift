@@ -23,7 +23,7 @@ struct SignUpView: View {
                 CustomTextField(title: "Email address", placeholder: "Enter email address", text: $emailAddress, height: geometry.size.width*0.15)
                     .padding(.top)
                 
-                RoundedActionButton(title: "Continue", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, action: {
+                RoundedActionButton(title: "Continue", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, isEnabled: true, action: {
                     viewModel.emailAddress = emailAddress
                     viewModel.fullName = fullName
 //                    navModel.path.append(Route.setPassword)

@@ -15,10 +15,16 @@ class BookingViewModel: ObservableObject {
     @Published var slots: [TimeSlot] = []
     @Published var isLoading = false
     @Published var errorMessage: String?
-        
+    @Published var selectedDate: String = ""
+    
     init(doctorId: String) {
         self.doctorId = doctorId
         Task { await loadSlots() }
+    }
+    
+    func selectDate(_ date: String) async {
+        selectedDate = date
+        await loadSlots()
     }
     
     private func loadSlots() async {
@@ -29,11 +35,10 @@ class BookingViewModel: ObservableObject {
         }
         
         do {
-            let fetchedSlots = try await SlotService.shared.getSlots(doctorId: doctorId)
+            let fetchedSlots = try await SlotService.shared.getSlots(doctorId: doctorId, date: selectedDate)
             await MainActor.run {
                 self.slots = fetchedSlots
                 isLoading = false
-                print(fetchedSlots)
             }
         } catch {
             await MainActor.run {

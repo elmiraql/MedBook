@@ -28,7 +28,7 @@ struct OTPView: View {
                 Text("We will resend code in 59 s")
                     .padding(.top)
                 
-                RoundedActionButton(title: "Verify", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, action: {})
+                RoundedActionButton(title: "Verify", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, isEnabled: true, action: {})
                     .padding()
                                 
             }

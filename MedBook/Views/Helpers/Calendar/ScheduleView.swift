@@ -26,6 +26,7 @@ struct ScheduleView: View {
             CalendarView { selectedDate, selectedHour in
                 self.selectedSessionDate = selectedDate
                 self.selectedSessionHour = selectedHour
+                self.onDateSelected(selectedDate.apiDateString())
             }
             
 //            HStack {

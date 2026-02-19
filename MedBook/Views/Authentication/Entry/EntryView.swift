@@ -33,11 +33,11 @@ struct EntryView: View {
                         
                         VStack{
                             
-                            RoundedActionButton(title: "Log In", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, action: {
+                            RoundedActionButton(title: "Log In", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, isEnabled: true, action: {
                                 navModel.navigate(to: .signIn(viewModel))
                             })
                             
-                            RoundedActionButton(title: "Sign Up", backgroundColor: Color("LightGray"), textColor: .black, height: geometry.size.width*0.15, action: {
+                            RoundedActionButton(title: "Sign Up", backgroundColor: Color("LightGray"), textColor: .black, height: geometry.size.width*0.15, isEnabled: true, action: {
                                 navModel.navigate(to: .signUp(viewModel))
                             })
                             

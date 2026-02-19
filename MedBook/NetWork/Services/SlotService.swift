@@ -11,7 +11,7 @@ actor SlotService {
 
     static let shared = SlotService()
     
-    func getSlots(doctorId: String) async throws -> [TimeSlot] {
+    func getSlots(doctorId: String, date: String) async throws -> [TimeSlot] {
         
         let delaySeconds = Int.random(in: 1...2)
         try await Task.sleep(for: .seconds(delaySeconds))

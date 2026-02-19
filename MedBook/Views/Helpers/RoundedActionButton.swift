@@ -13,7 +13,8 @@ struct RoundedActionButton: View {
     let backgroundColor: Color
     let textColor: Color
     let height: CGFloat
-        var action: () -> Void //= {print("print smth")}
+    let isEnabled: Bool
+    var action: () -> Void
     
     var body: some View {
         
@@ -22,11 +23,15 @@ struct RoundedActionButton: View {
                 .font(.headline)
                 .foregroundColor(textColor)
                 .frame(maxWidth: .infinity, maxHeight: height)
-                .background(backgroundColor)
+                .background(backgroundColorForState)
                 .cornerRadius(height / 2)
         }
-        
+        .disabled(!(isEnabled))
     }
+    
+    private var backgroundColorForState: Color {
+            isEnabled ? backgroundColor : Color.gray
+        }
 }
 
 

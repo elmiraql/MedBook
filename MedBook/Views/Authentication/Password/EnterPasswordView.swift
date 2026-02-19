@@ -34,7 +34,7 @@ struct EnterPasswordView: View {
                     NavigationLink {
 
                     } label: {
-                        RoundedActionButton(title: "Continue", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, action: {})
+                        RoundedActionButton(title: "Continue", backgroundColor: Color("PrimaryBlue"), textColor: .white, height: geometry.size.width*0.15, isEnabled: true, action: {})
                             .padding()
                     }
                     

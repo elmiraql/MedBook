@@ -11,6 +11,7 @@ struct BookAppointment: View {
     
     var doctorId: String
     @StateObject private var viewModel: BookingViewModel
+    @State private var selectedSlot: TimeSlot?
     
     init(doctorId: String) {
         _viewModel = StateObject(wrappedValue: BookingViewModel(doctorId: doctorId))
@@ -28,6 +29,7 @@ struct BookAppointment: View {
                 
                 ScheduleView { date in
                     print("date selected: \(date)")
+                    Task { await viewModel.selectDate(date) }
                 }
                 .background(.ultraThinMaterial)
                 .clipShape(RoundedRectangle(cornerRadius: 28))
@@ -38,7 +40,9 @@ struct BookAppointment: View {
                     y: 16
                 )
                 
-                SlotsContainerView(slots: viewModel.slots)
+                SlotsContainerView(slots: viewModel.slots, isLoading: viewModel.isLoading, errorMessage: viewModel.errorMessage, onSlotSelected: { slot in
+                    selectedSlot = slot
+                })
             }
             
             .padding(.horizontal)
@@ -46,8 +50,8 @@ struct BookAppointment: View {
         }
         .navigationTitle("Book appointment")
         .safeAreaInset(edge: .bottom, spacing: 0) {
-            RoundedActionButton(title: "Confirm", backgroundColor: .black, textColor: .white, height: 60) {
-                
+            RoundedActionButton(title: "Confirm", backgroundColor: .black, textColor: .white, height: 60, isEnabled: selectedSlot != nil) {
+
             }
             .padding(.horizontal)
         }

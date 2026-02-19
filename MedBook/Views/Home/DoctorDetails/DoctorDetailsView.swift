@@ -80,7 +80,7 @@ struct DoctorDetailsView: View {
         }
         .navigationTitle("Doctor details")
         .safeAreaInset(edge: .bottom, spacing: 0) {
-            RoundedActionButton(title: "Book Appointment", backgroundColor: .black, textColor: .white, height: 60) {
+            RoundedActionButton(title: "Book Appointment", backgroundColor: .black, textColor: .white, height: 60, isEnabled: true) {
                 router.navigate(to: .bookAppointment(doctorId: doctor.doctorId))
             }
             .padding(.horizontal)

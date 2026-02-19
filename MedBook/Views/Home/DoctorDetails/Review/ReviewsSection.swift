@@ -27,7 +27,7 @@ struct ReviewsSection: View {
             }
             
             if isLoading {
-                
+                Spacer()
                 ProgressView()
                     .frame(maxWidth: .infinity)
                 

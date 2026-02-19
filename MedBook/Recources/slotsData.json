@@ -10,10 +10,10 @@
                 {"id": "d1_5", "time": "11:00 AM", "isAvailable": true},
                 {"id": "d1_6", "time": "11:30 AM", "isAvailable": true},
                 {"id": "d1_7", "time": "03:00 PM", "isAvailable": true},
-                {"id": "d1_8", "time": "03:30 PM", "isAvailable": true},
+                {"id": "d1_8", "time": "03:30 PM", "isAvailable": false},
                 {"id": "d1_9", "time": "04:00 PM", "isAvailable": true},
                 {"id": "d1_10", "time": "04:30 PM", "isAvailable": true},
-                {"id": "d1_11", "time": "05:00 PM", "isAvailable": true},
+                {"id": "d1_11", "time": "05:00 PM", "isAvailable": false},
                 {"id": "d1_12", "time": "05:30 PM", "isAvailable": true}
             ]
         },
@@ -25,17 +25,17 @@
                 {"id": "d2_3", "time": "10:30 AM", "isAvailable": true},
                 {"id": "d2_4", "time": "12:00 PM", "isAvailable": true},
                 {"id": "d2_5", "time": "02:00 PM", "isAvailable": true},
-                {"id": "d2_6", "time": "04:00 PM", "isAvailable": true}
+                {"id": "d2_6", "time": "04:00 PM", "isAvailable": false}
             ]
         },
         "doc_009": {
             "date": "2026-02-19",
             "slots": [
-                {"id": "d3_1", "time": "07:30 AM", "isAvailable": true},
+                {"id": "d3_1", "time": "07:30 AM", "isAvailable": false},
                 {"id": "d3_2", "time": "08:30 AM", "isAvailable": true},
                 {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
                 {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
-                {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
+                {"id": "d3_5", "time": "02:30 PM", "isAvailable": false},
                 {"id": "d3_6", "time": "04:30 PM", "isAvailable": true}
             ]
         },
@@ -46,8 +46,8 @@
                 {"id": "d3_2", "time": "08:30 AM", "isAvailable": true},
                 {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
                 {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
-                {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
-                {"id": "d3_6", "time": "04:30 PM", "isAvailable": true}
+                {"id": "d3_5", "time": "02:30 PM", "isAvailable": false},
+                {"id": "d3_6", "time": "04:30 PM", "isAvailable": false}
             ]
         },
         "doc_001": {
@@ -56,7 +56,7 @@
                 {"id": "d3_1", "time": "07:30 AM", "isAvailable": true},
                 {"id": "d3_2", "time": "08:30 AM", "isAvailable": true},
                 {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
-                {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
+                {"id": "d3_4", "time": "01:00 PM", "isAvailable": false},
                 {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
                 {"id": "d3_6", "time": "04:30 PM", "isAvailable": true}
             ]
@@ -64,10 +64,10 @@
         "doc_005": {
             "date": "2026-02-19",
             "slots": [
-                {"id": "d3_1", "time": "07:30 AM", "isAvailable": true},
+                {"id": "d3_1", "time": "07:30 AM", "isAvailable": false},
                 {"id": "d3_2", "time": "08:30 AM", "isAvailable": true},
                 {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
-                {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
+                {"id": "d3_4", "time": "01:00 PM", "isAvailable": false},
                 {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
                 {"id": "d3_6", "time": "04:30 PM", "isAvailable": true}
             ]
@@ -76,10 +76,10 @@
             "date": "2026-02-19",
             "slots": [
                 {"id": "d3_1", "time": "07:30 AM", "isAvailable": true},
-                {"id": "d3_2", "time": "08:30 AM", "isAvailable": true},
-                {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
+                {"id": "d3_2", "time": "08:30 AM", "isAvailable": false},
+                {"id": "d3_3", "time": "09:30 AM", "isAvailable": true},
                 {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
-                {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
+                {"id": "d3_5", "time": "02:30 PM", "isAvailable": false},
                 {"id": "d3_6", "time": "04:30 PM", "isAvailable": true}
             ]
         },
@@ -91,14 +91,14 @@
                 {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
                 {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
                 {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
-                {"id": "d3_6", "time": "04:30 PM", "isAvailable": true}
+                {"id": "d3_6", "time": "04:30 PM", "isAvailable": false}
             ]
         },
         "doctor_9": {
             "date": "2026-02-19",
             "slots": [
-                {"id": "d3_1", "time": "07:30 AM", "isAvailable": true},
-                {"id": "d3_2", "time": "08:30 AM", "isAvailable": true},
+                {"id": "d3_1", "time": "07:30 AM", "isAvailable": false},
+                {"id": "d3_2", "time": "08:30 AM", "isAvailable": false},
                 {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
                 {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
                 {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
@@ -111,9 +111,9 @@
                 {"id": "d3_1", "time": "07:30 AM", "isAvailable": true},
                 {"id": "d3_2", "time": "08:30 AM", "isAvailable": true},
                 {"id": "d3_3", "time": "09:30 AM", "isAvailable": false},
-                {"id": "d3_4", "time": "01:00 PM", "isAvailable": true},
-                {"id": "d3_5", "time": "02:30 PM", "isAvailable": true},
-                {"id": "d3_6", "time": "04:30 PM", "isAvailable": true}
+                {"id": "d3_4", "time": "01:00 PM", "isAvailable": false},
+                {"id": "d3_5", "time": "02:30 PM", "isAvailable": false},
+                {"id": "d3_6", "time": "04:30 PM", "isAvailable": false}
             ]
         }
     }

@@ -94,3 +94,17 @@ extension Date {
         return formatter.string(from: self)
     }
 }
+
+extension Date {
+    func iso8601String() -> String {
+        let formatter = ISO8601DateFormatter()
+        return formatter.string(from: self)
+    }
+    
+    func apiDateString() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.string(from: self)
+    }
+}
+

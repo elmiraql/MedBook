@@ -53,7 +53,7 @@ struct DoctorCard: View {
                     Image(isFavorite ? "Favorite_fill" : "Favorite_empty")
                 }
                 
-                RoundedActionButton(title: "Book Appointment", backgroundColor: Color(.lightBlue), textColor: Color(.primaryBlue), height: buttonHeight) {
+                RoundedActionButton(title: "Book Appointment", backgroundColor: Color(.lightBlue), textColor: Color(.primaryBlue), height: buttonHeight, isEnabled: true) {
                     
                 }
             }
