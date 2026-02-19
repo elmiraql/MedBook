@@ -16,6 +16,7 @@ enum Route: Hashable {
     case forgotPassword(AuthViewModel)
     case seeAllDoctors(HomeViewModel)
     case doctorDetails(doctor: Doctor)
+    case bookAppointment(doctorId: String)
 }
 
 @MainActor

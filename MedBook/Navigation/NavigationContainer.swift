@@ -53,6 +53,8 @@ struct NavigationContainer<Content: View>: View {
             AllDoctorsView(doctors: homeViewModel.doctors, categories: homeViewModel.doctorCategories)
         case let .doctorDetails(doctor):
             DoctorDetailsView(doctor: doctor)
+        case let .bookAppointment(doctorId: doctorId):
+            BookAppointment(doctorId: doctorId)
         default:
             EmptyView()
         }

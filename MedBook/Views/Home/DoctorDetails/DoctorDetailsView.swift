@@ -11,6 +11,7 @@ struct DoctorDetailsView: View {
     
     let doctor: Doctor
     @StateObject private var viewModel: DoctorDetailViewModel
+    @EnvironmentObject var router: NavigationRouter
     
     init(doctor: Doctor) {
         _viewModel = StateObject(wrappedValue: DoctorDetailViewModel(doctor: doctor))
@@ -78,6 +79,14 @@ struct DoctorDetailsView: View {
             }
         }
         .navigationTitle("Doctor details")
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            RoundedActionButton(title: "Book Appointment", backgroundColor: .black, textColor: .white, height: 60) {
+                router.navigate(to: .bookAppointment(doctorId: doctor.doctorId))
+            }
+            .padding(.horizontal)
+        }
+
+
     }
        
 }

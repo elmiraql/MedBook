@@ -59,36 +59,41 @@ struct ReviewRow: View {
     
     var body: some View {
         
-        HStack(alignment: .top, spacing: 12) {
-            
-            Image(systemName: "person.circle.fill")
-                .font(.title2)
-                .foregroundStyle(.gray)
-            
-            VStack(alignment: .leading, spacing: 4) {
+        VStack {
+            HStack(alignment: .top, spacing: 12) {
                 
-                HStack {
-                    Text(review.author)
-                        .font(.subheadline.bold())
-                    Spacer()
-                    Text(review.stars)
-                        .font(.caption)
-                }
-                
-                Text(review.text)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.leading)
-                
-                Text(review.date)
-                    .font(.caption2)
+                Image(systemName: "person.circle.fill")
+                    .font(.title2)
                     .foregroundStyle(.gray)
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    
+                    HStack {
+                        Text(review.author)
+                            .font(.subheadline.bold())
+                        Spacer()
+                        Text(review.stars)
+                            .font(.caption)
+                    }
+                    
+                    Text(review.text)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.leading)
+                    
+                    Text(review.date)
+                        .font(.caption2)
+                        .foregroundStyle(.gray)
+                    
+                    
+                }
             }
+            Divider()
         }
     }
 }
 
 
 #Preview {
-    ReviewsSection(reviews: [Review(text: "", author: "", stars: "", date: "")], isLoading: false, errorMessage: "")
+    ReviewsSection(reviews: [Review(text: "Dr. Patel is a true professional who genuinely cares about his patients. I highly recommend Dr. Patel to anyone seeking exceptional cardiac care.", author: "Emily Anderson", stars: "", date: "today")], isLoading: false, errorMessage: "")
 }
